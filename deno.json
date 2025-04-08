@@ -1,0 +1,23 @@
+{
+	"nodeModulesDir": "auto",
+	"tasks": {
+		"scan": "deno run -A mod.ts"
+	},
+	"imports": {
+		"@std/fmt": "jsr:@std/fmt@^1.0.6",
+		"@std/cli": "jsr:@std/cli@^1.0.15",
+		"@retraigo/image-size": "jsr:@retraigo/image-size@^1.0.0",
+		"html-validate": "npm:html-validate@^9.5.2",
+		"puppeteer": "npm:puppeteer@^24.6.0"
+	},
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 80,
+		"indentWidth": 4,
+		"semiColons": false,
+		"singleQuote": true
+	},
+	"compilerOptions": {
+		"lib": ["deno.ns", "dom", "dom.iterable"]
+	}
+}
